@@ -71,15 +71,13 @@ alter table TB_NOTA_FISCAL
        foreign key (cd_locacao) 
        references TB_LOCACAO
        
-insert 
-    into
+insert into
         TB_CLIENTE
         (nr_cartao_credito, nr_codigo_seguranca, nr_cpf, dt_validade_cartao, nm_cliente, cd_cliente) 
     values
         (?, ?, ?, ?, ?, ?)
 
-insert 
-    into
+insert into
         TB_NOTA_FISCAL
         (cd_verificacao, dt_emissao, cd_locacao, nr_nota, vl_imposto, vl_nota_fiscal, cd_nota_fiscal) 
     values
